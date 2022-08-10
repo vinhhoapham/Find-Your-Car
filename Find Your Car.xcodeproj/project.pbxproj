@@ -1,0 +1,903 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D0618532887E0E200662091 /* FindYourCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0618522887E0E200662091 /* FindYourCarModel.swift */; };
+		3D1754B8289863DB002CC736 /* String+UImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1754B7289863DB002CC736 /* String+UImage.swift */; };
+		3D1754BB2898D336002CC736 /* Dictionary+FindKeyWithValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1754BA2898D336002CC736 /* Dictionary+FindKeyWithValue.swift */; };
+		3D1E83C9289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E83C8289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift */; };
+		3D1E83CB289BD21A00D29DAB /* MKMapView + ClearMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E83CA289BD21A00D29DAB /* MKMapView + ClearMap.swift */; };
+		3D2AA59F28A16761009BF4C2 /* RadiatingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA59E28A16761009BF4C2 /* RadiatingAnimation.swift */; };
+		3D2AA5A228A168A7009BF4C2 /* View+CircularRadiatingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2AA5A128A168A7009BF4C2 /* View+CircularRadiatingAnimation.swift */; };
+		3D31234728A25E100033EE3C /* ScheduleReminderSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31234628A25E100033EE3C /* ScheduleReminderSheetView.swift */; };
+		3D3D69202895A658009D5CB0 /* CLCoordinate2D+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D691F2895A658009D5CB0 /* CLCoordinate2D+Hashable.swift */; };
+		3D3D69222895A9CF009D5CB0 /* Vehicle+Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D69212895A9CF009D5CB0 /* Vehicle+Annotation.swift */; };
+		3D3D69242895AA03009D5CB0 /* Tag+getEmoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3D69232895AA03009D5CB0 /* Tag+getEmoji.swift */; };
+		3D4B6624289F10B500927F3F /* MKMapView + AnimatedShowAnnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4B6623289F10B500927F3F /* MKMapView + AnimatedShowAnnotations.swift */; };
+		3D56308C28A2C3B800DAE096 /* ColorPalete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56308B28A2C3B800DAE096 /* ColorPalete.swift */; };
+		3D6BB652288F390500ADD17E /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6BB651288F390500ADD17E /* LocationError.swift */; };
+		3D74DBB4289A646F00FB19AA /* MKMapView+drawRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74DBB3289A646F00FB19AA /* MKMapView+drawRoute.swift */; };
+		3D74E90228A002DA00F2815B /* Vehicle+annotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74E90128A002D900F2815B /* Vehicle+annotationView.swift */; };
+		3D74E90428A0031200F2815B /* Tag+annotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74E90328A0031100F2815B /* Tag+annotationView.swift */; };
+		3D7851AA28A2E1D800460F9B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7851A928A2E1D800460F9B /* Button.swift */; };
+		3D843E3428850C3200A8AB0D /* NotificaitonAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D843E3328850C3200A8AB0D /* NotificaitonAuthorization.swift */; };
+		3D919B27289172B200B783D3 /* MapDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D919B26289172B200B783D3 /* MapDefaults.swift */; };
+		3DA4ACD4288B282300FB812D /* Tag+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4ACD3288B282300FB812D /* Tag+Hashable.swift */; };
+		3DA4ACD6288B284200FB812D /* Vehicle+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4ACD5288B284200FB812D /* Vehicle+Hashable.swift */; };
+		3DAA1A50288C302C004AF571 /* Vehicle+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA1A4F288C302C004AF571 /* Vehicle+Comparable.swift */; };
+		3DBA570028926783003650DE /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA56FF28926783003650DE /* CircleButton.swift */; };
+		3DC21A1B2873137900795DEF /* Find_Your_CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A1A2873137900795DEF /* Find_Your_CarApp.swift */; };
+		3DC21A1D2873137900795DEF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A1C2873137900795DEF /* MainView.swift */; };
+		3DC21A1F2873137C00795DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC21A1E2873137C00795DEF /* Assets.xcassets */; };
+		3DC21A222873137C00795DEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC21A212873137C00795DEF /* Preview Assets.xcassets */; };
+		3DC21A272873137C00795DEF /* Find_Your_Car.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A252873137C00795DEF /* Find_Your_Car.xcdatamodeld */; };
+		3DC21A312873137C00795DEF /* Find_Your_CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A302873137C00795DEF /* Find_Your_CarTests.swift */; };
+		3DC21A3B2873137C00795DEF /* Find_Your_CarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A3A2873137C00795DEF /* Find_Your_CarUITests.swift */; };
+		3DC21A3D2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A3C2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift */; };
+		3DCB78452879B17400B002CA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCB78442879B17400B002CA /* MapKit.framework */; };
+		3DCB784A2879BCC500B002CA /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCB78492879BCC500B002CA /* MapViewModel.swift */; };
+		3DCBC7CD28A192080063E66E /* CenterInUserLocationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBC7CC28A192070063E66E /* CenterInUserLocationButton.swift */; };
+		3DCD12532881ACF7006658B9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD12522881ACF7006658B9 /* LocationManager.swift */; };
+		3DCD12562881C473006658B9 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCD12552881C473006658B9 /* NotificationManager.swift */; };
+		3DD7D9492889C2C300431113 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7D9482889C2C300431113 /* MapManager.swift */; };
+		3DD7D94B2889CF9C00431113 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7D94A2889CF9C00431113 /* MapView.swift */; };
+		3DD7D94E2889F25000431113 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7D94D2889F25000431113 /* Vehicle.swift */; };
+		3DD7D950288A6C6200431113 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD7D94F288A6C6200431113 /* Tag.swift */; };
+		3DDE79222894372200475FD8 /* MainMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDE79212894372200475FD8 /* MainMap.swift */; };
+		3DF75C27289C3F65004D5D88 /* MKMapView+AnimatedZoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF75C26289C3F65004D5D88 /* MKMapView+AnimatedZoom.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DC21A2D2873137C00795DEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC21A0F2873137900795DEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC21A162873137900795DEF;
+			remoteInfo = "Find Your Car";
+		};
+		3DC21A372873137C00795DEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC21A0F2873137900795DEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DC21A162873137900795DEF;
+			remoteInfo = "Find Your Car";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D0618522887E0E200662091 /* FindYourCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourCarModel.swift; sourceTree = "<group>"; };
+		3D1754B7289863DB002CC736 /* String+UImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UImage.swift"; sourceTree = "<group>"; };
+		3D1754BA2898D336002CC736 /* Dictionary+FindKeyWithValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+FindKeyWithValue.swift"; sourceTree = "<group>"; };
+		3D1E83C8289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapManager+FindVehicleWithCoordinate.swift"; sourceTree = "<group>"; };
+		3D1E83CA289BD21A00D29DAB /* MKMapView + ClearMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView + ClearMap.swift"; sourceTree = "<group>"; };
+		3D2AA59E28A16761009BF4C2 /* RadiatingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiatingAnimation.swift; sourceTree = "<group>"; };
+		3D2AA5A128A168A7009BF4C2 /* View+CircularRadiatingAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CircularRadiatingAnimation.swift"; sourceTree = "<group>"; };
+		3D31234628A25E100033EE3C /* ScheduleReminderSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleReminderSheetView.swift; sourceTree = "<group>"; };
+		3D3D691F2895A658009D5CB0 /* CLCoordinate2D+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLCoordinate2D+Hashable.swift"; sourceTree = "<group>"; };
+		3D3D69212895A9CF009D5CB0 /* Vehicle+Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Annotation.swift"; sourceTree = "<group>"; };
+		3D3D69232895AA03009D5CB0 /* Tag+getEmoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+getEmoji.swift"; sourceTree = "<group>"; };
+		3D4B6623289F10B500927F3F /* MKMapView + AnimatedShowAnnotations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView + AnimatedShowAnnotations.swift"; sourceTree = "<group>"; };
+		3D56308B28A2C3B800DAE096 /* ColorPalete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalete.swift; sourceTree = "<group>"; };
+		3D6BB651288F390500ADD17E /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
+		3D74DBB3289A646F00FB19AA /* MKMapView+drawRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+drawRoute.swift"; sourceTree = "<group>"; };
+		3D74E900289F529B00F2815B /* gpxgenerator_path.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = gpxgenerator_path.gpx; path = ../../Downloads/gpxgenerator_path.gpx; sourceTree = "<group>"; };
+		3D74E90128A002D900F2815B /* Vehicle+annotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+annotationView.swift"; sourceTree = "<group>"; };
+		3D74E90328A0031100F2815B /* Tag+annotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+annotationView.swift"; sourceTree = "<group>"; };
+		3D7851A928A2E1D800460F9B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		3D843E3328850C3200A8AB0D /* NotificaitonAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificaitonAuthorization.swift; sourceTree = "<group>"; };
+		3D919B26289172B200B783D3 /* MapDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDefaults.swift; sourceTree = "<group>"; };
+		3DA4ACD3288B282300FB812D /* Tag+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+Hashable.swift"; sourceTree = "<group>"; };
+		3DA4ACD5288B284200FB812D /* Vehicle+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Hashable.swift"; sourceTree = "<group>"; };
+		3DAA1A4F288C302C004AF571 /* Vehicle+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Comparable.swift"; sourceTree = "<group>"; };
+		3DBA56FF28926783003650DE /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		3DC21A172873137900795DEF /* Find Your Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Your Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC21A1A2873137900795DEF /* Find_Your_CarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_CarApp.swift; sourceTree = "<group>"; };
+		3DC21A1C2873137900795DEF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		3DC21A1E2873137C00795DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC21A212873137C00795DEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3DC21A262873137C00795DEF /* Find_Your_Car.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_Your_Car.xcdatamodel; sourceTree = "<group>"; };
+		3DC21A2C2873137C00795DEF /* Find Your CarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your CarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC21A302873137C00795DEF /* Find_Your_CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_CarTests.swift; sourceTree = "<group>"; };
+		3DC21A362873137C00795DEF /* Find Your CarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your CarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC21A3A2873137C00795DEF /* Find_Your_CarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_CarUITests.swift; sourceTree = "<group>"; };
+		3DC21A3C2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_CarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DCB78422879B17400B002CA /* Find-Your-Car-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Find-Your-Car-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3DCB78442879B17400B002CA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3DCB78492879BCC500B002CA /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		3DCBC7CC28A192070063E66E /* CenterInUserLocationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterInUserLocationButton.swift; sourceTree = "<group>"; };
+		3DCD12522881ACF7006658B9 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3DCD12552881C473006658B9 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		3DD7D9482889C2C300431113 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		3DD7D94A2889CF9C00431113 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		3DD7D94D2889F25000431113 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		3DD7D94F288A6C6200431113 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		3DDE79212894372200475FD8 /* MainMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMap.swift; sourceTree = "<group>"; };
+		3DF75C26289C3F65004D5D88 /* MKMapView+AnimatedZoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MKMapView+AnimatedZoom.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DC21A142873137900795DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DCB78452879B17400B002CA /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC21A292873137C00795DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC21A332873137C00795DEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D1754B92898D31A002CC736 /* Foundations */ = {
+			isa = PBXGroup;
+			children = (
+				3D1754BA2898D336002CC736 /* Dictionary+FindKeyWithValue.swift */,
+			);
+			path = Foundations;
+			sourceTree = "<group>";
+		};
+		3D2AA59D28A16746009BF4C2 /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				3DBA56FF28926783003650DE /* CircleButton.swift */,
+				3D2AA59E28A16761009BF4C2 /* RadiatingAnimation.swift */,
+			);
+			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		3D2AA5A028A16892009BF4C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA5A128A168A7009BF4C2 /* View+CircularRadiatingAnimation.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D31234828A2B16C0033EE3C /* ColorTheme */ = {
+			isa = PBXGroup;
+			children = (
+				3D56308B28A2C3B800DAE096 /* ColorPalete.swift */,
+			);
+			path = ColorTheme;
+			sourceTree = "<group>";
+		};
+		3D3D691E2895A45E009D5CB0 /* MainMap */ = {
+			isa = PBXGroup;
+			children = (
+				3DDE79212894372200475FD8 /* MainMap.swift */,
+				3D3D691F2895A658009D5CB0 /* CLCoordinate2D+Hashable.swift */,
+				3D1754B7289863DB002CC736 /* String+UImage.swift */,
+			);
+			path = MainMap;
+			sourceTree = "<group>";
+		};
+		3D74DBB1289A63E700FB19AA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3D2AA5A028A16892009BF4C2 /* View */,
+				3D74DBB2289A645500FB19AA /* UIKit */,
+				3D1754B92898D31A002CC736 /* Foundations */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3D74DBB2289A645500FB19AA /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3D74DBB3289A646F00FB19AA /* MKMapView+drawRoute.swift */,
+				3D1E83CA289BD21A00D29DAB /* MKMapView + ClearMap.swift */,
+				3DF75C26289C3F65004D5D88 /* MKMapView+AnimatedZoom.swift */,
+				3D4B6623289F10B500927F3F /* MKMapView + AnimatedShowAnnotations.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		3D7851A828A2E19600460F9B /* ScheduleReminderSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				3D31234628A25E100033EE3C /* ScheduleReminderSheetView.swift */,
+				3DC21A1C2873137900795DEF /* MainView.swift */,
+				3D7851A928A2E1D800460F9B /* Button.swift */,
+			);
+			path = ScheduleReminderSheetView;
+			sourceTree = "<group>";
+		};
+		3D9B6F902889434F008E0664 /* MapManager */ = {
+			isa = PBXGroup;
+			children = (
+				3D919B26289172B200B783D3 /* MapDefaults.swift */,
+				3DD7D9482889C2C300431113 /* MapManager.swift */,
+				3D1E83C8289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift */,
+				3DCD12542881B208006658B9 /* LocationManager */,
+			);
+			path = MapManager;
+			sourceTree = "<group>";
+		};
+		3DA4ACD2288B281400FB812D /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				3DD7D94F288A6C6200431113 /* Tag.swift */,
+				3DA4ACD3288B282300FB812D /* Tag+Hashable.swift */,
+				3D3D69232895AA03009D5CB0 /* Tag+getEmoji.swift */,
+				3D74E90328A0031100F2815B /* Tag+annotationView.swift */,
+			);
+			path = Tag;
+			sourceTree = "<group>";
+		};
+		3DA4ACD7288B284700FB812D /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				3DD7D94D2889F25000431113 /* Vehicle.swift */,
+				3DAA1A4F288C302C004AF571 /* Vehicle+Comparable.swift */,
+				3DA4ACD5288B284200FB812D /* Vehicle+Hashable.swift */,
+				3D3D69212895A9CF009D5CB0 /* Vehicle+Annotation.swift */,
+				3D74E90128A002D900F2815B /* Vehicle+annotationView.swift */,
+			);
+			path = Vehicle;
+			sourceTree = "<group>";
+		};
+		3DBA56FE28926754003650DE /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				3DD7D94A2889CF9C00431113 /* MapView.swift */,
+				3DCBC7CB28A18D7A0063E66E /* CenterInUserLocationButton */,
+				3D2AA59D28A16746009BF4C2 /* CircleButton */,
+				3D3D691E2895A45E009D5CB0 /* MainMap */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		3DC21A0E2873137900795DEF = {
+			isa = PBXGroup;
+			children = (
+				3D74E900289F529B00F2815B /* gpxgenerator_path.gpx */,
+				3DCB78422879B17400B002CA /* Find-Your-Car-Info.plist */,
+				3DC21A192873137900795DEF /* Find Your Car */,
+				3DC21A2F2873137C00795DEF /* Find Your CarTests */,
+				3DC21A392873137C00795DEF /* Find Your CarUITests */,
+				3DC21A182873137900795DEF /* Products */,
+				3DCB78432879B17400B002CA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC21A182873137900795DEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC21A172873137900795DEF /* Find Your Car.app */,
+				3DC21A2C2873137C00795DEF /* Find Your CarTests.xctest */,
+				3DC21A362873137C00795DEF /* Find Your CarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC21A192873137900795DEF /* Find Your Car */ = {
+			isa = PBXGroup;
+			children = (
+				3DC21A1A2873137900795DEF /* Find_Your_CarApp.swift */,
+				3D74DBB1289A63E700FB19AA /* Extension */,
+				3DCB78482879BC3600B002CA /* Model */,
+				3DCB78472879BC2E00B002CA /* ViewModel */,
+				3DCB78462879B91B00B002CA /* View */,
+				3DC21A1E2873137C00795DEF /* Assets.xcassets */,
+				3DC21A252873137C00795DEF /* Find_Your_Car.xcdatamodeld */,
+				3DC21A202873137C00795DEF /* Preview Content */,
+			);
+			path = "Find Your Car";
+			sourceTree = "<group>";
+		};
+		3DC21A202873137C00795DEF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3DC21A212873137C00795DEF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3DC21A2F2873137C00795DEF /* Find Your CarTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC21A302873137C00795DEF /* Find_Your_CarTests.swift */,
+			);
+			path = "Find Your CarTests";
+			sourceTree = "<group>";
+		};
+		3DC21A392873137C00795DEF /* Find Your CarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC21A3A2873137C00795DEF /* Find_Your_CarUITests.swift */,
+				3DC21A3C2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift */,
+			);
+			path = "Find Your CarUITests";
+			sourceTree = "<group>";
+		};
+		3DCB78432879B17400B002CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCB78442879B17400B002CA /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DCB78462879B91B00B002CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D7851A828A2E19600460F9B /* ScheduleReminderSheetView */,
+				3D31234828A2B16C0033EE3C /* ColorTheme */,
+				3DBA56FE28926754003650DE /* MapView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DCB78472879BC2E00B002CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DCB78492879BCC500B002CA /* MapViewModel.swift */,
+				3D9B6F902889434F008E0664 /* MapManager */,
+				3DCD12572881C99C006658B9 /* NotificationManager */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3DCB78482879BC3600B002CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D0618522887E0E200662091 /* FindYourCarModel.swift */,
+				3DA4ACD7288B284700FB812D /* Vehicle */,
+				3DA4ACD2288B281400FB812D /* Tag */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DCBC7CB28A18D7A0063E66E /* CenterInUserLocationButton */ = {
+			isa = PBXGroup;
+			children = (
+				3DCBC7CC28A192070063E66E /* CenterInUserLocationButton.swift */,
+			);
+			path = CenterInUserLocationButton;
+			sourceTree = "<group>";
+		};
+		3DCD12542881B208006658B9 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DCD12522881ACF7006658B9 /* LocationManager.swift */,
+				3D6BB651288F390500ADD17E /* LocationError.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		3DCD12572881C99C006658B9 /* NotificationManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DCD12552881C473006658B9 /* NotificationManager.swift */,
+				3D843E3328850C3200A8AB0D /* NotificaitonAuthorization.swift */,
+			);
+			path = NotificationManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DC21A162873137900795DEF /* Find Your Car */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC21A402873137C00795DEF /* Build configuration list for PBXNativeTarget "Find Your Car" */;
+			buildPhases = (
+				3DC21A132873137900795DEF /* Sources */,
+				3DC21A142873137900795DEF /* Frameworks */,
+				3DC21A152873137900795DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find Your Car";
+			productName = "Find Your Car";
+			productReference = 3DC21A172873137900795DEF /* Find Your Car.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC21A2B2873137C00795DEF /* Find Your CarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC21A432873137C00795DEF /* Build configuration list for PBXNativeTarget "Find Your CarTests" */;
+			buildPhases = (
+				3DC21A282873137C00795DEF /* Sources */,
+				3DC21A292873137C00795DEF /* Frameworks */,
+				3DC21A2A2873137C00795DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC21A2E2873137C00795DEF /* PBXTargetDependency */,
+			);
+			name = "Find Your CarTests";
+			productName = "Find Your CarTests";
+			productReference = 3DC21A2C2873137C00795DEF /* Find Your CarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DC21A352873137C00795DEF /* Find Your CarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC21A462873137C00795DEF /* Build configuration list for PBXNativeTarget "Find Your CarUITests" */;
+			buildPhases = (
+				3DC21A322873137C00795DEF /* Sources */,
+				3DC21A332873137C00795DEF /* Frameworks */,
+				3DC21A342873137C00795DEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DC21A382873137C00795DEF /* PBXTargetDependency */,
+			);
+			name = "Find Your CarUITests";
+			productName = "Find Your CarUITests";
+			productReference = 3DC21A362873137C00795DEF /* Find Your CarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC21A0F2873137900795DEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					3DC21A162873137900795DEF = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					3DC21A2B2873137C00795DEF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 3DC21A162873137900795DEF;
+					};
+					3DC21A352873137C00795DEF = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 3DC21A162873137900795DEF;
+					};
+				};
+			};
+			buildConfigurationList = 3DC21A122873137900795DEF /* Build configuration list for PBXProject "Find Your Car" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC21A0E2873137900795DEF;
+			productRefGroup = 3DC21A182873137900795DEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC21A162873137900795DEF /* Find Your Car */,
+				3DC21A2B2873137C00795DEF /* Find Your CarTests */,
+				3DC21A352873137C00795DEF /* Find Your CarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DC21A152873137900795DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC21A222873137C00795DEF /* Preview Assets.xcassets in Resources */,
+				3DC21A1F2873137C00795DEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC21A2A2873137C00795DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC21A342873137C00795DEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DC21A132873137900795DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D3D69202895A658009D5CB0 /* CLCoordinate2D+Hashable.swift in Sources */,
+				3DA4ACD6288B284200FB812D /* Vehicle+Hashable.swift in Sources */,
+				3D56308C28A2C3B800DAE096 /* ColorPalete.swift in Sources */,
+				3D7851AA28A2E1D800460F9B /* Button.swift in Sources */,
+				3D74E90428A0031200F2815B /* Tag+annotationView.swift in Sources */,
+				3D6BB652288F390500ADD17E /* LocationError.swift in Sources */,
+				3DF75C27289C3F65004D5D88 /* MKMapView+AnimatedZoom.swift in Sources */,
+				3DD7D950288A6C6200431113 /* Tag.swift in Sources */,
+				3D2AA59F28A16761009BF4C2 /* RadiatingAnimation.swift in Sources */,
+				3DBA570028926783003650DE /* CircleButton.swift in Sources */,
+				3D2AA5A228A168A7009BF4C2 /* View+CircularRadiatingAnimation.swift in Sources */,
+				3DA4ACD4288B282300FB812D /* Tag+Hashable.swift in Sources */,
+				3D1E83C9289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift in Sources */,
+				3D0618532887E0E200662091 /* FindYourCarModel.swift in Sources */,
+				3DAA1A50288C302C004AF571 /* Vehicle+Comparable.swift in Sources */,
+				3D1754BB2898D336002CC736 /* Dictionary+FindKeyWithValue.swift in Sources */,
+				3D3D69242895AA03009D5CB0 /* Tag+getEmoji.swift in Sources */,
+				3D3D69222895A9CF009D5CB0 /* Vehicle+Annotation.swift in Sources */,
+				3DCBC7CD28A192080063E66E /* CenterInUserLocationButton.swift in Sources */,
+				3DCD12562881C473006658B9 /* NotificationManager.swift in Sources */,
+				3D1E83CB289BD21A00D29DAB /* MKMapView + ClearMap.swift in Sources */,
+				3D74DBB4289A646F00FB19AA /* MKMapView+drawRoute.swift in Sources */,
+				3DCB784A2879BCC500B002CA /* MapViewModel.swift in Sources */,
+				3D4B6624289F10B500927F3F /* MKMapView + AnimatedShowAnnotations.swift in Sources */,
+				3D31234728A25E100033EE3C /* ScheduleReminderSheetView.swift in Sources */,
+				3DDE79222894372200475FD8 /* MainMap.swift in Sources */,
+				3D843E3428850C3200A8AB0D /* NotificaitonAuthorization.swift in Sources */,
+				3DC21A1D2873137900795DEF /* MainView.swift in Sources */,
+				3D1754B8289863DB002CC736 /* String+UImage.swift in Sources */,
+				3DCD12532881ACF7006658B9 /* LocationManager.swift in Sources */,
+				3DD7D9492889C2C300431113 /* MapManager.swift in Sources */,
+				3D919B27289172B200B783D3 /* MapDefaults.swift in Sources */,
+				3DD7D94B2889CF9C00431113 /* MapView.swift in Sources */,
+				3DC21A272873137C00795DEF /* Find_Your_Car.xcdatamodeld in Sources */,
+				3DD7D94E2889F25000431113 /* Vehicle.swift in Sources */,
+				3D74E90228A002DA00F2815B /* Vehicle+annotationView.swift in Sources */,
+				3DC21A1B2873137900795DEF /* Find_Your_CarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC21A282873137C00795DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC21A312873137C00795DEF /* Find_Your_CarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC21A322873137C00795DEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC21A3B2873137C00795DEF /* Find_Your_CarUITests.swift in Sources */,
+				3DC21A3D2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DC21A2E2873137C00795DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC21A162873137900795DEF /* Find Your Car */;
+			targetProxy = 3DC21A2D2873137C00795DEF /* PBXContainerItemProxy */;
+		};
+		3DC21A382873137C00795DEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DC21A162873137900795DEF /* Find Your Car */;
+			targetProxy = 3DC21A372873137C00795DEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DC21A3E2873137C00795DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DC21A3F2873137C00795DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC21A412873137C00795DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Find Your Car/Preview Content\"";
+				DEVELOPMENT_TEAM = H323Z3M8AD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Find-Your-Car-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vinhph.Find-Your-Car";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DC21A422873137C00795DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Find Your Car/Preview Content\"";
+				DEVELOPMENT_TEAM = H323Z3M8AD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Find-Your-Car-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vinhph.Find-Your-Car";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DC21A442873137C00795DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H323Z3M8AD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vinhph.Find-Your-CarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Your Car.app/Find Your Car";
+			};
+			name = Debug;
+		};
+		3DC21A452873137C00795DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H323Z3M8AD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vinhph.Find-Your-CarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find Your Car.app/Find Your Car";
+			};
+			name = Release;
+		};
+		3DC21A472873137C00795DEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H323Z3M8AD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vinhph.Find-Your-CarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Find Your Car";
+			};
+			name = Debug;
+		};
+		3DC21A482873137C00795DEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H323Z3M8AD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "vinhph.Find-Your-CarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Find Your Car";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DC21A122873137900795DEF /* Build configuration list for PBXProject "Find Your Car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC21A3E2873137C00795DEF /* Debug */,
+				3DC21A3F2873137C00795DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC21A402873137C00795DEF /* Build configuration list for PBXNativeTarget "Find Your Car" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC21A412873137C00795DEF /* Debug */,
+				3DC21A422873137C00795DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC21A432873137C00795DEF /* Build configuration list for PBXNativeTarget "Find Your CarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC21A442873137C00795DEF /* Debug */,
+				3DC21A452873137C00795DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC21A462873137C00795DEF /* Build configuration list for PBXNativeTarget "Find Your CarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC21A472873137C00795DEF /* Debug */,
+				3DC21A482873137C00795DEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DC21A252873137C00795DEF /* Find_Your_Car.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DC21A262873137C00795DEF /* Find_Your_Car.xcdatamodel */,
+			);
+			currentVersion = 3DC21A262873137C00795DEF /* Find_Your_Car.xcdatamodel */;
+			path = Find_Your_Car.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3DC21A0F2873137900795DEF /* Project object */;
+}
