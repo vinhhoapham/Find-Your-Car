@@ -21,7 +21,4 @@ final class FindYourCarViewModel : ObservableObject {
     @Published var mapManager       = MapManager(vehicleLocations: [:], defaulVehicle: VanillaObjects.vehicle)
     var model                       = FindYourCarModel()
     
-    
-
-    
 }

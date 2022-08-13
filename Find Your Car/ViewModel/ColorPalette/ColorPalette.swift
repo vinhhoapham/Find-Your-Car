@@ -18,4 +18,12 @@ class ColorPalette : ObservableObject {
         self.accentColor = accent
     }
     
+    required init(from decoder: Decoder) throws {
+        let decodedPalette = try decoder.container(keyedBy: CodingKeys.self)
+        primaryColor = try decodedPalette.decode(Color.self, forKey: .primaryColor)
+        secondaryColor = try decodedPalette.decode(Color.self, forKey: .secondaryColor)
+        accentColor = try decodedPalette.decode(Color.self, forKey: .accentColor)
+        
+    }
+    
 }
