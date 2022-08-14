@@ -19,6 +19,7 @@ struct MainView: View {
             .sheet(isPresented: $showingRemindToPickUpSheet) {
                ScheduleReminderSheetView(isShowing: $showingRemindToPickUpSheet)
             }
+        SettingsView()
 
     }
 }

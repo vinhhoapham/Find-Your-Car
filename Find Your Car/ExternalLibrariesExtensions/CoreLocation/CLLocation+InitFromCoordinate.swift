@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import CoreLocation
+
+extension CLLocation {
+    convenience init(coordinate : Coordinate) {
+        self.init(latitude: coordinate.lattitude, longitude: coordinate.longitude)
+    }
+}

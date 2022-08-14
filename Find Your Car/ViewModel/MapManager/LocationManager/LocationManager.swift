@@ -22,10 +22,7 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     
     override init() {
         super.init()
-        manager.delegate = self
-        manager.desiredAccuracy = .greatestFiniteMagnitude
-        manager.startUpdatingLocation()
-        print("This got called INIT")
+        setUpLocationManager()
     }
     func isCloseTo(location : CLLocation) -> Bool {
         return currentLocation.distance(from: location) <= LocationDefault.reachDistance
@@ -52,25 +49,20 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
         return requestDestinationToVehicle
     }
     
-    func checkIfLocationServiceEnabled() throws {
-        
-        if CLLocationManager.locationServicesEnabled() {
-            manager = CLLocationManager()
-            manager.delegate = self
-            manager.desiredAccuracy = .greatestFiniteMagnitude
-            manager.startUpdatingLocation()
-        } else {
-            print("Failed")
-            throw LocationError.managerNotInitialzed
-        }
-        
+    
+    
+    func setUpLocationManager() {
+        manager.delegate = self
+        manager.desiredAccuracy = .greatestFiniteMagnitude
+        manager.startUpdatingLocation()
     }
+    
     
     func requestLocationPermission() {
         manager.requestWhenInUseAuthorization()
     }
     
-    private func checkAuthorizationStatus() throws {
+    func checkAuthorizationStatus() throws {
         
         switch manager.authorizationStatus {
             case .notDetermined:
@@ -87,8 +79,7 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-        print("Updated")
+        print("Updated values with: \(locations)")
         guard let latestLocation = locations.last else {
             print("Couldn't update your location")
             return

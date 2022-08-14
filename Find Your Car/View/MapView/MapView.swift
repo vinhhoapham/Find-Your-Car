@@ -12,7 +12,7 @@ struct MapView: View {
     
     @EnvironmentObject var mapManager : MapManager
     @EnvironmentObject var locationManager : LocationManager
-    @EnvironmentObject var colorPalette : ColorPalette
+    @EnvironmentObject var settings : Settings
     
     var geoCoder = CLGeocoder()
     @Binding var showingRemindToPickUpSheet : Bool
@@ -20,9 +20,9 @@ struct MapView: View {
     @State var refreshingPublisher : Timer.TimerPublisher
     let mainButtonRadius : CGFloat = 20.0
     
-    init(refreshingInterval : Double = 5.0, showingRemindToPickUpSheet: Binding<Bool>) {
+    init(refreshingInterval : Double = 15.0, showingRemindToPickUpSheet: Binding<Bool>) {
         refreshingPublisher = Timer.publish( every: refreshingInterval,
-                                              on   : .main,
+                                             on   : .main,
                                              in   : .default)
         
         self._showingRemindToPickUpSheet = showingRemindToPickUpSheet
@@ -34,6 +34,8 @@ struct MapView: View {
         ZStack(alignment: .bottom) {
             
             
+            
+            
             MainMap()
                 .onAppear {
                     mapManager.requestUsersLocationAccess()
@@ -41,33 +43,33 @@ struct MapView: View {
                 .onReceive(refreshingPublisher) { _ in
                     mapManager.triggerUpdate()
                 }
-            
             HStack {
-            
+                
                 CenterInUserLocationButton(action: mapManager.triggerUpdate)
                 
-                if mapManager.focusingVehicleIsCloseToUsersLocation && mapManager.focusingVehicle == mapManager.defaultVehicle {
-                    CircleButton(radius: mainButtonRadius) {
-                        // We can safely force-unwrap this because toggle's variable
-                        // has make sure that the focusingVehicle is not nil
-                        try! mapManager.unmarkFocusingVehicle()
+                if mapManager.focusingVehicle == settings.defaultVehicle && mapManager.focusingVehicleIsCloseToUsersLocation {
+                        CircleButton(radius: mainButtonRadius) {
+                            // We can safely force-unwrap this because toggle's variable
+                            // has make sure that the focusingVehicle is not nil
+                            try! mapManager.unmarkFocusingVehicle()
+                        
                     }
-                
                 } else {
-                    CircleButton(radius: mainButtonRadius, color: colorPalette.primaryColor) {
-                        mapManager.markDefaultVehicle()
+                    CircleButton(radius: mainButtonRadius, color: settings.colorPalette.primaryColor) {
+                        mapManager.mark(vehicle: settings.defaultVehicle)
                         showingRemindToPickUpSheet = true
                     }
-                        .padding(.bottom, 10.0)
+                    
+                    
+                    
                 }
                 
+                
             }
-            
             
         }
         
     }
     
+    
 }
-
-

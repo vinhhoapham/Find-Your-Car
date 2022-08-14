@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum contentType {
+enum contentType : Codable {
     case defaultTag
     case emoji
 }
@@ -15,7 +15,7 @@ enum contentType {
 enum TagError : Error{
     case failedToLoadEmoji
 }
-struct Tag {
+struct Tag : Codable {
     var id      = UUID()
     var name    : String
     var type    : contentType

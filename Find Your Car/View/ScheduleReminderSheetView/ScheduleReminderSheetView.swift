@@ -26,9 +26,11 @@ struct ScheduleReminderSheetView: View {
                 RectangularSheetButton(color: .green, label: "Remind me") {
                     
                     DispatchQueue.main.async {
+                        
                         notificationManager.scheduleANotification(time: timeToPickUpVehicle, content: NotificationDefault.content)
 
                     }
+                    
                     isShowing = false
                 }
             }

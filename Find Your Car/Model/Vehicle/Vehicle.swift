@@ -8,10 +8,15 @@
 import Foundation
 import MapKit
 
-struct Vehicle : Identifiable {
+class Vehicle : Identifiable, Codable, ObservableObject {
    
     private(set) var name   : String
     private(set) var tag    : Tag
     private(set) var id     = UUID()
+    
+    init(name: String, tag : Tag) {
+        self.name = name
+        self.tag  = tag
+    }
 }
 

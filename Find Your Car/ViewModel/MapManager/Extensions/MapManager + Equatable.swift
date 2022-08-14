@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+extension MapManager : Equatable {
+    static func == (lhs: MapManager, rhs: MapManager) -> Bool {
+        return lhs.vehicleLocations == rhs.vehicleLocations &&
+                lhs.focusingVehicle == rhs.focusingVehicle
+    }
+    
+    
+}

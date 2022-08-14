@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import CoreLocation
+
+extension VehicleLocations {
+    init(vehicleCoordinates : [Vehicle : Coordinate]) {
+        self = vehicleCoordinates.mapValues { CLLocation(coordinate: $0) }
+    }
+}

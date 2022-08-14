@@ -9,19 +9,21 @@ import MapKit
 
 typealias VehicleLocations = [Vehicle : CLLocation]
 
+
+
 /// Handle marking and unmarking of vehicle's locations
 ///
 class MapManager: ObservableObject {
+    
     
     enum MapManagerError : Error{
         case vehicleNotFound
     }
    
-    @Published private(set) var defaultVehicle      : Vehicle
     @Published private(set) var vehicleLocations    : VehicleLocations
     @Published private(set) var userLocation        = LocationManager()
+    @Published private(set) var focusingVehicle : Vehicle?
     
-    @Published private(set) var viewUpdate = true
     
     private var geoCoder = CLGeocoder()
     
@@ -50,7 +52,6 @@ class MapManager: ObservableObject {
                                 longitudeDelta: longitudeSpan + MapDefaults.paddingSpan)
     }
 
-    @Published var focusingVehicle : Vehicle?
     var focusingVehicleLocation : CLLocation? {
         guard let focusingVehicle = focusingVehicle else {
             return nil
@@ -70,10 +71,20 @@ class MapManager: ObservableObject {
         return userLocation.isCloseTo(location: focusingVehicleLocation)
     }
     
-    init(vehicleLocations : [Vehicle : CLLocation], focusingVehicle: Vehicle? = nil, defaulVehicle : Vehicle) {
+    init (vehicleLocations : [Vehicle : CLLocation], focusingVehicle  : Vehicle? = nil) {
+        
         self.vehicleLocations = vehicleLocations
         self.focusingVehicle = focusingVehicle
-        self.defaultVehicle = defaulVehicle
+    }
+    
+    convenience init (persitence : MapManagerPersistence) {
+        self.init(vehicleLocations: VehicleLocations(vehicleCoordinates: persitence.vehiclesCoordinates),
+                  focusingVehicle : persitence.focusingVehicle)
+    }
+    
+    func mark(vehicle: Vehicle) {
+        let currentUsersLocation = userLocation.currentLocation
+        mark(vehicle: vehicle, at: currentUsersLocation)
     }
     
     func mark(vehicle : Vehicle, at location: CLLocation) {
@@ -82,9 +93,8 @@ class MapManager: ObservableObject {
         try! self.setFocusingVehicle(to: vehicle)
     
     }
-    func markDefaultVehicle() {
-        mark(vehicle: defaultVehicle, at: userLocation.currentLocation)
-    }
+    
+    
     func unmark(vehicle: Vehicle) {
         vehicleLocations.removeValue(forKey: vehicle)
     }
@@ -104,15 +114,16 @@ class MapManager: ObservableObject {
     }
     
     func requestUsersLocationAccess() {
-        
         do {
-            try userLocation.checkIfLocationServiceEnabled()
-        } catch LocationError.managerNotInitialzed {
-           print("fail to initalize manager")
+            try userLocation.checkAuthorizationStatus()
+        } catch LocationError.permissionUndetermined {
+            userLocation.requestLocationPermission()
+        } catch LocationError.permissionDenied, LocationError.permissionRestricted {
+            // TODO: Alert here
         } catch {
-           print("Unkown error")
+            userLocation.requestLocationPermission()
         }
-        userLocation.requestLocationPermission()
+        
     }
     
     func unmarkFocusingVehicle() throws {
@@ -124,7 +135,7 @@ class MapManager: ObservableObject {
     }
     
     func triggerUpdate() {
-        self.viewUpdate.toggle()
+        objectWillChange.send()
     }
     
     func getPlacemark(of location: CLLocation,

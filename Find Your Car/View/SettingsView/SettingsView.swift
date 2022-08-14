@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject var settings : Settings
+    @EnvironmentObject var viewModel : FindYourCarViewModel
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Rectangle()
+                .frame(width: 15, height: 15, alignment: .bottom)
+                .background(settings.colorPalette.primaryColor)
+            ColorPicker("Primary color ", selection: $settings.colorPalette.primaryColor)
+            
+        }
     }
 }
 

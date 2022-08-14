@@ -86,7 +86,6 @@ struct MainMap : UIViewRepresentable {
     func makeUIView(context: Context) -> MKMapView {
         let mkMapView = MKMapView()
         mkMapView.delegate = context.coordinator
-        mkMapView.animatedZoom(to: mapManger.mapCentersOnUserLocation())
         mkMapView.userTrackingMode = .followWithHeading
         mkMapView.showsTraffic = false
         return mkMapView
@@ -96,12 +95,11 @@ struct MainMap : UIViewRepresentable {
         
         uiView.clear()
         let vehiclesLocation = mapManger.vehicleLocations
-        print(vehiclesLocation)
         for (vehicle, location) in vehiclesLocation {
             uiView.addAnnotation(vehicle.annotation(at: location))
         }
         
-        uiView.animatedShowAnnotations()
+        uiView.animatedZoom(to: mapManger.mapCentersOnUserLocation())
         uiView.showsUserLocation = true
         if let focusingVehicleLocation = mapManger.focusingVehicleLocation {
             drawRouteFromUsersLocation(to: focusingVehicleLocation, on: uiView)

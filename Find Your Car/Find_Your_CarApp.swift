@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Combine
+import MetricKit
 
 @main
 struct Find_Your_CarApp: App {
@@ -21,7 +23,8 @@ struct Find_Your_CarApp: App {
                 .environmentObject(viewModel.notificationManager)
                 .environmentObject(viewModel.mapManager.userLocation)
                 .environmentObject(viewModel.mapManager)
-                .environmentObject(colorPalette)
+                .environmentObject(viewModel.settings.colorPalette)
+                .environmentObject(viewModel.settings)
         }
     }
     
