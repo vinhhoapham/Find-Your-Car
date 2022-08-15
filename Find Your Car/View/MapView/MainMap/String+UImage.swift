@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension String {
-    func UImage(fontSize    : CGFloat = 40,
+    func UImage(fontSize             : CGFloat = 40,
                 backgroundColor      : UIColor = UIColor.clear,
                imageSize    : CGSize? = nil) -> UIImage?
     {

@@ -21,6 +21,7 @@ final class FindYourCarViewModel : ObservableObject {
     
     var mapManagerUpdateListener : AnyCancellable?
     var settingsUpdateListener    : AnyCancellable?
+    
     init() {
         
         
@@ -28,8 +29,7 @@ final class FindYourCarViewModel : ObservableObject {
         mapManager = MapManager(persitence: model.mapManagerPersistence)
         settings = model.savedSettings
         
-        mapManagerUpdateListener = mapManager.objectWillChange.sink { [self] in
-                
+        mapManagerUpdateListener = mapManager.objectWillChange.sink { [unowned self] in
             self.saveAllData()
         }
         
@@ -38,6 +38,7 @@ final class FindYourCarViewModel : ObservableObject {
         }
         
     }
+    
     
     func saveAllData() {
         

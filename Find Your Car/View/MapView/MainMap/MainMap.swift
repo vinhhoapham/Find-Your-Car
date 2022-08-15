@@ -71,7 +71,7 @@ struct MainMap : UIViewRepresentable {
         
         func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
             let renderer = MKGradientPolylineRenderer(overlay: overlay)
-            renderer.strokeColor = UIColor(parentView.colorPalette.accentColor)
+            renderer.strokeColor = UIColor(parentView.settings.colorPalette.accentColor)
             renderer.lineWidth = 5
             return renderer
         }
@@ -79,7 +79,7 @@ struct MainMap : UIViewRepresentable {
     }
     
     @EnvironmentObject var mapManger : MapManager
-    @EnvironmentObject var colorPalette : ColorPalette
+    @EnvironmentObject var settings : Settings
     
     typealias UIViewType = MKMapView
     

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3D0618532887E0E200662091 /* FindYourCarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0618522887E0E200662091 /* FindYourCarModel.swift */; };
+		3D150FCE28A92BC700C82298 /* LocationDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D150FCD28A92BC700C82298 /* LocationDefault.swift */; };
+		3D150FD028A92DA900C82298 /* AlertSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D150FCF28A92DA900C82298 /* AlertSystem.swift */; };
+		3D150FD328A92E1800C82298 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D150FD228A92E1800C82298 /* Alert.swift */; };
+		3D150FD528A99F8A00C82298 /* AlertType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D150FD428A99F8A00C82298 /* AlertType.swift */; };
 		3D1754B8289863DB002CC736 /* String+UImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1754B7289863DB002CC736 /* String+UImage.swift */; };
 		3D1754BB2898D336002CC736 /* Dictionary+FindKeyWithValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1754BA2898D336002CC736 /* Dictionary+FindKeyWithValue.swift */; };
 		3D1E83C9289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1E83C8289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift */; };
@@ -32,7 +36,7 @@
 		3D7EA0E928A577A9006DF008 /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0E828A577A9006DF008 /* Coordinate.swift */; };
 		3D7EA0EB28A5785E006DF008 /* VehiclesLocation+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0EA28A5785E006DF008 /* VehiclesLocation+.swift */; };
 		3D7EA0ED28A57AE0006DF008 /* CLLocation+InitFromCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0EC28A57AE0006DF008 /* CLLocation+InitFromCoordinate.swift */; };
-		3D7EA0F028A58D73006DF008 /* VanillaObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0EF28A58D73006DF008 /* VanillaObjects.swift */; };
+		3D7EA0F028A58D73006DF008 /* DefaultObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0EF28A58D73006DF008 /* DefaultObject.swift */; };
 		3D7EA0F228A59E9E006DF008 /* UsersPersistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0F128A59E9E006DF008 /* UsersPersistence.swift */; };
 		3D7EA0F828A5C071006DF008 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7EA0F728A5C071006DF008 /* SettingsView.swift */; };
 		3D843E3428850C3200A8AB0D /* NotificaitonAuthorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D843E3328850C3200A8AB0D /* NotificaitonAuthorization.swift */; };
@@ -40,12 +44,13 @@
 		3DA4ACD4288B282300FB812D /* Tag+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4ACD3288B282300FB812D /* Tag+Hashable.swift */; };
 		3DA4ACD6288B284200FB812D /* Vehicle+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4ACD5288B284200FB812D /* Vehicle+Hashable.swift */; };
 		3DAA1A50288C302C004AF571 /* Vehicle+Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAA1A4F288C302C004AF571 /* Vehicle+Comparable.swift */; };
+		3DB8C84528AA3C5C003E7368 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8C84428AA3C5C003E7368 /* AlertView.swift */; };
+		3DB8C84728AA43A9003E7368 /* AlertViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8C84628AA43A9003E7368 /* AlertViewModifier.swift */; };
 		3DBA570028926783003650DE /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA56FF28926783003650DE /* CircleButton.swift */; };
 		3DC21A1B2873137900795DEF /* Find_Your_CarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A1A2873137900795DEF /* Find_Your_CarApp.swift */; };
 		3DC21A1D2873137900795DEF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A1C2873137900795DEF /* MainView.swift */; };
 		3DC21A1F2873137C00795DEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC21A1E2873137C00795DEF /* Assets.xcassets */; };
 		3DC21A222873137C00795DEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC21A212873137C00795DEF /* Preview Assets.xcassets */; };
-		3DC21A272873137C00795DEF /* Find_Your_Car.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A252873137C00795DEF /* Find_Your_Car.xcdatamodeld */; };
 		3DC21A312873137C00795DEF /* Find_Your_CarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A302873137C00795DEF /* Find_Your_CarTests.swift */; };
 		3DC21A3B2873137C00795DEF /* Find_Your_CarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A3A2873137C00795DEF /* Find_Your_CarUITests.swift */; };
 		3DC21A3D2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC21A3C2873137C00795DEF /* Find_Your_CarUITestsLaunchTests.swift */; };
@@ -81,6 +86,10 @@
 
 /* Begin PBXFileReference section */
 		3D0618522887E0E200662091 /* FindYourCarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindYourCarModel.swift; sourceTree = "<group>"; };
+		3D150FCD28A92BC700C82298 /* LocationDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDefault.swift; sourceTree = "<group>"; };
+		3D150FCF28A92DA900C82298 /* AlertSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSystem.swift; sourceTree = "<group>"; };
+		3D150FD228A92E1800C82298 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		3D150FD428A99F8A00C82298 /* AlertType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertType.swift; sourceTree = "<group>"; };
 		3D1754B7289863DB002CC736 /* String+UImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UImage.swift"; sourceTree = "<group>"; };
 		3D1754BA2898D336002CC736 /* Dictionary+FindKeyWithValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+FindKeyWithValue.swift"; sourceTree = "<group>"; };
 		3D1E83C8289BB4AB00D29DAB /* MapManager+FindVehicleWithCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MapManager+FindVehicleWithCoordinate.swift"; sourceTree = "<group>"; };
@@ -106,7 +115,7 @@
 		3D7EA0E828A577A9006DF008 /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
 		3D7EA0EA28A5785E006DF008 /* VehiclesLocation+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VehiclesLocation+.swift"; sourceTree = "<group>"; };
 		3D7EA0EC28A57AE0006DF008 /* CLLocation+InitFromCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+InitFromCoordinate.swift"; sourceTree = "<group>"; };
-		3D7EA0EF28A58D73006DF008 /* VanillaObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanillaObjects.swift; sourceTree = "<group>"; };
+		3D7EA0EF28A58D73006DF008 /* DefaultObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultObject.swift; sourceTree = "<group>"; };
 		3D7EA0F128A59E9E006DF008 /* UsersPersistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPersistence.swift; sourceTree = "<group>"; };
 		3D7EA0F728A5C071006DF008 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3D843E3328850C3200A8AB0D /* NotificaitonAuthorization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificaitonAuthorization.swift; sourceTree = "<group>"; };
@@ -114,13 +123,14 @@
 		3DA4ACD3288B282300FB812D /* Tag+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tag+Hashable.swift"; sourceTree = "<group>"; };
 		3DA4ACD5288B284200FB812D /* Vehicle+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Hashable.swift"; sourceTree = "<group>"; };
 		3DAA1A4F288C302C004AF571 /* Vehicle+Comparable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Vehicle+Comparable.swift"; sourceTree = "<group>"; };
+		3DB8C84428AA3C5C003E7368 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		3DB8C84628AA43A9003E7368 /* AlertViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModifier.swift; sourceTree = "<group>"; };
 		3DBA56FF28926783003650DE /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		3DC21A172873137900795DEF /* Find Your Car.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Your Car.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC21A1A2873137900795DEF /* Find_Your_CarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_CarApp.swift; sourceTree = "<group>"; };
 		3DC21A1C2873137900795DEF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		3DC21A1E2873137C00795DEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC21A212873137C00795DEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3DC21A262873137C00795DEF /* Find_Your_Car.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Find_Your_Car.xcdatamodel; sourceTree = "<group>"; };
 		3DC21A2C2873137C00795DEF /* Find Your CarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your CarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC21A302873137C00795DEF /* Find_Your_CarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Find_Your_CarTests.swift; sourceTree = "<group>"; };
 		3DC21A362873137C00795DEF /* Find Your CarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find Your CarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +176,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D150FD128A92DD500C82298 /* AlertSystem */ = {
+			isa = PBXGroup;
+			children = (
+				3D150FCF28A92DA900C82298 /* AlertSystem.swift */,
+				3D150FD228A92E1800C82298 /* Alert.swift */,
+				3D150FD428A99F8A00C82298 /* AlertType.swift */,
+			);
+			path = AlertSystem;
+			sourceTree = "<group>";
+		};
 		3D1754B92898D31A002CC736 /* Foundations */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,6 +362,15 @@
 			path = Vehicle;
 			sourceTree = "<group>";
 		};
+		3DB8C84828AA43C7003E7368 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				3DB8C84628AA43A9003E7368 /* AlertViewModifier.swift */,
+				3DB8C84428AA3C5C003E7368 /* AlertView.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		3DBA56FE28926754003650DE /* MapView */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,7 +414,6 @@
 				3DCB78472879BC2E00B002CA /* ViewModel */,
 				3DCB78462879B91B00B002CA /* View */,
 				3DC21A1E2873137C00795DEF /* Assets.xcassets */,
-				3DC21A252873137C00795DEF /* Find_Your_Car.xcdatamodeld */,
 				3DC21A202873137C00795DEF /* Preview Content */,
 			);
 			path = "Find Your Car";
@@ -427,6 +455,7 @@
 		3DCB78462879B91B00B002CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3DB8C84828AA43C7003E7368 /* Alert */,
 				3DC21A1C2873137900795DEF /* MainView.swift */,
 				3D7EA0F628A5C05E006DF008 /* SettingsView */,
 				3D7851A828A2E19600460F9B /* ScheduleReminderSheetView */,
@@ -439,7 +468,8 @@
 			isa = PBXGroup;
 			children = (
 				3DCB78492879BCC500B002CA /* FYCViewModel.swift */,
-				3D7EA0EF28A58D73006DF008 /* VanillaObjects.swift */,
+				3D7EA0EF28A58D73006DF008 /* DefaultObject.swift */,
+				3D150FD128A92DD500C82298 /* AlertSystem */,
 				3D7EA0F528A5A354006DF008 /* Settings */,
 				3D31234828A2B16C0033EE3C /* ColorPalette */,
 				3D9B6F902889434F008E0664 /* MapManager */,
@@ -473,6 +503,7 @@
 			children = (
 				3DCD12522881ACF7006658B9 /* LocationManager.swift */,
 				3D6BB651288F390500ADD17E /* LocationError.swift */,
+				3D150FCD28A92BC700C82298 /* LocationDefault.swift */,
 			);
 			path = LocationManager;
 			sourceTree = "<group>";
@@ -616,7 +647,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D7EA0F028A58D73006DF008 /* VanillaObjects.swift in Sources */,
+				3D7EA0F028A58D73006DF008 /* DefaultObject.swift in Sources */,
 				3D3D69202895A658009D5CB0 /* CLCoordinate2D+Hashable.swift in Sources */,
 				3DA4ACD6288B284200FB812D /* Vehicle+Hashable.swift in Sources */,
 				3D56308C28A2C3B800DAE096 /* ColorPalette.swift in Sources */,
@@ -624,6 +655,7 @@
 				3D7851AA28A2E1D800460F9B /* Button.swift in Sources */,
 				3D74E90428A0031200F2815B /* Tag+annotationView.swift in Sources */,
 				3D6BB652288F390500ADD17E /* LocationError.swift in Sources */,
+				3DB8C84728AA43A9003E7368 /* AlertViewModifier.swift in Sources */,
 				3DF75C27289C3F65004D5D88 /* MKMapView+AnimatedZoom.swift in Sources */,
 				3DD7D950288A6C6200431113 /* Tag.swift in Sources */,
 				3D7EA0F228A59E9E006DF008 /* UsersPersistence.swift in Sources */,
@@ -635,14 +667,18 @@
 				3D0618532887E0E200662091 /* FindYourCarModel.swift in Sources */,
 				3DAA1A50288C302C004AF571 /* Vehicle+Comparable.swift in Sources */,
 				3D1754BB2898D336002CC736 /* Dictionary+FindKeyWithValue.swift in Sources */,
+				3D150FD028A92DA900C82298 /* AlertSystem.swift in Sources */,
 				3D3D69242895AA03009D5CB0 /* Tag+getEmoji.swift in Sources */,
+				3DB8C84528AA3C5C003E7368 /* AlertView.swift in Sources */,
 				3D3D69222895A9CF009D5CB0 /* Vehicle+Annotation.swift in Sources */,
 				3DCBC7CD28A192080063E66E /* CenterInUserLocationButton.swift in Sources */,
+				3D150FD528A99F8A00C82298 /* AlertType.swift in Sources */,
 				3DCD12562881C473006658B9 /* NotificationManager.swift in Sources */,
 				3D1E83CB289BD21A00D29DAB /* MKMapView + ClearMap.swift in Sources */,
 				3D74DBB4289A646F00FB19AA /* MKMapView+drawRoute.swift in Sources */,
 				3D69E71328A65442004DEF1D /* MapManager + Equatable.swift in Sources */,
 				3DCB784A2879BCC500B002CA /* FYCViewModel.swift in Sources */,
+				3D150FD328A92E1800C82298 /* Alert.swift in Sources */,
 				3D4B6624289F10B500927F3F /* MKMapView + AnimatedShowAnnotations.swift in Sources */,
 				3D7EA0F828A5C071006DF008 /* SettingsView.swift in Sources */,
 				3D31234728A25E100033EE3C /* ScheduleReminderSheetView.swift in Sources */,
@@ -657,11 +693,11 @@
 				3D919B27289172B200B783D3 /* MapDefaults.swift in Sources */,
 				3D456A3028A423C600081C14 /* Settings.swift in Sources */,
 				3DD7D94B2889CF9C00431113 /* MapView.swift in Sources */,
-				3DC21A272873137C00795DEF /* Find_Your_Car.xcdatamodeld in Sources */,
 				3DD7D94E2889F25000431113 /* Vehicle.swift in Sources */,
 				3D74E90228A002DA00F2815B /* Vehicle+annotationView.swift in Sources */,
 				3D7EA0ED28A57AE0006DF008 /* CLLocation+InitFromCoordinate.swift in Sources */,
 				3D456A3228A4273100081C14 /* Color+Codable.swift in Sources */,
+				3D150FCE28A92BC700C82298 /* LocationDefault.swift in Sources */,
 				3DC21A1B2873137900795DEF /* Find_Your_CarApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -989,19 +1025,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		3DC21A252873137C00795DEF /* Find_Your_Car.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3DC21A262873137C00795DEF /* Find_Your_Car.xcdatamodel */,
-			);
-			currentVersion = 3DC21A262873137C00795DEF /* Find_Your_Car.xcdatamodel */;
-			path = Find_Your_Car.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3DC21A0F2873137900795DEF /* Project object */;
 }

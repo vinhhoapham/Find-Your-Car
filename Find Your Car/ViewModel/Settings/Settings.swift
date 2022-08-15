@@ -23,9 +23,9 @@ class Settings : ObservableObject , Codable {
         case vehicles
     }
     
-    @Published var defaultVehicle : Vehicle = VanillaObjects.vehicle
+    @Published var defaultVehicle : Vehicle = DefaultObject.vehicle
     @Published var colorPalette : ColorPalette = DefaultSettings.colorPalette
-    @Published private(set) var vehicles       : [Vehicle] = [VanillaObjects.vehicle]
+    @Published private(set) var vehicles       : [Vehicle] = [DefaultObject.vehicle]
     
     init() {}
     

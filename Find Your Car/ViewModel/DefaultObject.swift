@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum VanillaObjects {
+enum DefaultObject {
     static let tag = Tag(name: "vanilla", type: .defaultTag)
     static let vehicle = Vehicle(name: "vanilla", tag: tag)
 }

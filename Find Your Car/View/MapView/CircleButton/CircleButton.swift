@@ -19,7 +19,6 @@ struct CircleButton : View {
                 .fill(color)
         }
         .frame(width: radius, height: radius)
-        .circularRadiatingAnimation(color: color)
         
     }
 }

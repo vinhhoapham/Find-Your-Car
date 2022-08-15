@@ -14,13 +14,12 @@ struct MapView: View {
     @EnvironmentObject var locationManager : LocationManager
     @EnvironmentObject var settings : Settings
     
-    var geoCoder = CLGeocoder()
     @Binding var showingRemindToPickUpSheet : Bool
     
     @State var refreshingPublisher : Timer.TimerPublisher
-    let mainButtonRadius : CGFloat = 20.0
+    let mainButtonRadius : CGFloat = 50.0
     
-    init(refreshingInterval : Double = 15.0, showingRemindToPickUpSheet: Binding<Bool>) {
+    init(refreshingInterval : Double = 5.0, showingRemindToPickUpSheet: Binding<Bool>) {
         refreshingPublisher = Timer.publish( every: refreshingInterval,
                                              on   : .main,
                                              in   : .default)
@@ -33,9 +32,6 @@ struct MapView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             
-            
-            
-            
             MainMap()
                 .onAppear {
                     mapManager.requestUsersLocationAccess()
@@ -43,17 +39,18 @@ struct MapView: View {
                 .onReceive(refreshingPublisher) { _ in
                     mapManager.triggerUpdate()
                 }
+            
             HStack {
                 
                 CenterInUserLocationButton(action: mapManager.triggerUpdate)
                 
                 if mapManager.focusingVehicle == settings.defaultVehicle && mapManager.focusingVehicleIsCloseToUsersLocation {
-                        CircleButton(radius: mainButtonRadius) {
-                            // We can safely force-unwrap this because toggle's variable
-                            // has make sure that the focusingVehicle is not nil
-                            try! mapManager.unmarkFocusingVehicle()
+                    CircleButton(radius: mainButtonRadius, color: .green) {
+                        // We can safely force-unwrap this because toggle's variable
+                        // has make sure that the focusingVehicle is not nil
+                        try! mapManager.unmarkFocusingVehicle()
                         
-                    }
+                    }.circularRadiatingAnimation(color: .green)
                 } else {
                     CircleButton(radius: mainButtonRadius, color: settings.colorPalette.primaryColor) {
                         mapManager.mark(vehicle: settings.defaultVehicle)

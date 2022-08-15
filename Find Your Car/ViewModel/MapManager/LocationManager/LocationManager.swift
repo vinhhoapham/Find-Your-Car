@@ -8,17 +8,16 @@
 import Foundation
 import MapKit
 
-enum LocationDefault {
-    static let reachDistance       = 150.0
-    static let defaultLocation     = CLLocation(latitude: 0, longitude: 0)
-}
+
 
 
 class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
     
     
     private(set) var manager : CLLocationManager = CLLocationManager()
-    @Published private(set) var currentLocation: CLLocation = LocationDefault.defaultLocation
+    var currentLocation: CLLocation  {
+        manager.location ?? LocationDefault.defaultLocation
+    }
     
     override init() {
         super.init()
@@ -78,20 +77,6 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("Updated values with: \(locations)")
-        guard let latestLocation = locations.last else {
-            print("Couldn't update your location")
-            return
-        }
-        
-        DispatchQueue.main.async {
-            self.currentLocation = latestLocation
-        }
-        
-                
-        
-    }
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print(error.localizedDescription)
     }
