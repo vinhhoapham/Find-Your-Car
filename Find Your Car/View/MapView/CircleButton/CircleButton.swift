@@ -17,8 +17,13 @@ struct CircleButton : View {
         Button(action: action) {
            Circle()
                 .fill(color)
+                .opacity(0.75)
         }
         .frame(width: radius, height: radius)
+        .overlay(
+            Circle()
+                .stroke(.white, lineWidth: 10)
+        )
         
     }
 }

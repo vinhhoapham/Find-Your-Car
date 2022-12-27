@@ -38,6 +38,12 @@ class NotificationManager : NSObject, ObservableObject, UNUserNotificationCenter
         
     }
     
+    func scheduleANotification(time: Date, message: String, title: String) {
+        let notificationContent = generateNotificationContent(title: title, message: message)
+        scheduleANotification(time: time, content: notificationContent)
+        
+    }
+    
     func createTrigger(time: Date) -> UNCalendarNotificationTrigger {
         let triggeringTime = Calendar.current.dateComponents([.hour, .minute], from: time)
         let trigger = UNCalendarNotificationTrigger(dateMatching: triggeringTime, repeats: false)
@@ -52,6 +58,19 @@ class NotificationManager : NSObject, ObservableObject, UNUserNotificationCenter
                 print(error!)
             }
         }
+    }
+    
+    func generateNotificationContent(
+            title: String,
+            message: String
+        ) -> UNMutableNotificationContent {
+            
+            let content = UNMutableNotificationContent()
+            content.title = title
+            content.subtitle = message
+            
+            return content
+            
     }
     
     

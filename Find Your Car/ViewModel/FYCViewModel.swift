@@ -50,4 +50,25 @@ final class FindYourCarViewModel : ObservableObject {
         }
     }
     
+    func scheduleARemindToPickUpNotification(at time: Date) {
+        
+        let title = "It's time to pickup your car"
+        var message = ""
+        if let placemarkName = self.mapManager.getPlacemark (
+                                            of:
+                                                self.mapManager.focusingVehicleLocation ??
+                                                self.mapManager.userLocation.currentLocation ) {
+            message = "Your car was parked near \(placemarkName) "
+        }
+        DispatchQueue.global(qos: .background).async { [unowned self] in
+                        
+            self.notificationManager.scheduleANotification (
+                time: time,
+                message: message,
+                title: title
+            )
+
+        }
+    }
+    
 }

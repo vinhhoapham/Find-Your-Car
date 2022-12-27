@@ -24,7 +24,7 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
         setUpLocationManager()
     }
     func isCloseTo(location : CLLocation) -> Bool {
-        return currentLocation.distance(from: location) <= LocationDefault.reachDistance
+        currentLocation.distance(from: location) <= LocationDefault.reachDistance
     }
     
     func getDirectionFromCurrent(to location: CLLocation) ->  MKDirections {
@@ -48,6 +48,11 @@ class LocationManager : NSObject, ObservableObject, CLLocationManagerDelegate {
         return requestDestinationToVehicle
     }
     
+    func verticalDirection(to location: CLLocation) -> VerticalDirection {
+        let verticalDistance = location.altitude - currentLocation.altitude
+        if abs(verticalDistance) <= LocationDefault.reachAltitude { return .same }
+        return verticalDistance > 0 ? .higher : .lower
+    }
     
     
     func setUpLocationManager() {

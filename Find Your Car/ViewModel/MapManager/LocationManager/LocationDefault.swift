@@ -11,5 +11,6 @@ import CoreLocation
 enum LocationDefault {
     
     static let reachDistance       = 75.0
+    static let reachAltitude       = 3.0
     static let defaultLocation     = CLLocation(latitude: 0, longitude: 0)
 }

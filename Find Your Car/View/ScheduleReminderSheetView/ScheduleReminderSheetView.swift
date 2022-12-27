@@ -9,31 +9,29 @@ import SwiftUI
 
 struct ScheduleReminderSheetView: View {
     let title = "Remind me to pick up my vehicle at"
-    
     @Binding var isShowing : Bool 
     @State var timeToPickUpVehicle : Date = Date()
-    @EnvironmentObject var notificationManager : NotificationManager
+    @EnvironmentObject var viewModel : FindYourCarViewModel
     
     var body: some View {
         VStack {
             
-            Text(title)
-            DatePicker("Pick Date", selection: $timeToPickUpVehicle)
-            
+            Form {
+                Text(title)
+                DatePicker( "Time", selection: $timeToPickUpVehicle)
+            }
+                .background(.white)
+                .frame(height: 180)
             HStack {
                 RectangularSheetButton(color: .red, label: "Cancel") { isShowing = false }
                 
                 RectangularSheetButton(color: .green, label: "Remind me") {
-                    
-                    DispatchQueue.main.async {
-                        
-                        notificationManager.scheduleANotification(time: timeToPickUpVehicle, content: NotificationDefault.content)
-
-                    }
-                    
+                    viewModel.scheduleARemindToPickUpNotification(at: timeToPickUpVehicle)
                     isShowing = false
                 }
+                
             }
+            
         }
     }
 }

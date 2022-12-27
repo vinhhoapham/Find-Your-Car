@@ -71,6 +71,15 @@ class MapManager: ObservableObject {
         return userLocation.isCloseTo(location: focusingVehicleLocation)
     }
     
+    var usersLocationVerticalDirectionToFocusingVehicle : VerticalDirection? {
+        guard let focusingVehicleLocation = focusingVehicleLocation else {
+            return nil
+        }
+        
+        return userLocation.verticalDirection(to: focusingVehicleLocation)
+
+    }
+    
     init (vehicleLocations : [Vehicle : CLLocation], focusingVehicle  : Vehicle? = nil) {
         
         self.vehicleLocations = vehicleLocations
@@ -138,23 +147,30 @@ class MapManager: ObservableObject {
         objectWillChange.send()
     }
     
-    func getPlacemark(of location: CLLocation,
-                      completionHandler : @escaping (CLPlacemark?) -> Void) {
+    func getPlacemark(of location: CLLocation) -> String? {
         
-        geoCoder.reverseGeocodeLocation(location) { (placemark, error) in
-            if let error = error {
-               print(error)
-            } else {
-                guard let placemark = placemark else {
-                    print("Fail to get the placemark of \(location)")
-                    return
-                }
-                
-                completionHandler(placemark.first)
+        // The purpose of this struct is to return the landmark inside a function
+        class Landmark {
+            static var name : String?
+        }
+        
+        geoCoder.reverseGeocodeLocation(location) { placemark, error in
+            guard let placemarkName = placemark?.first?.name else {
+                print(error.debugDescription)
+                return
+            }
+            
+            DispatchQueue.main.async {
+                Landmark.name = placemarkName
             }
         }
         
+        return Landmark.name
     }
+    
+    
+    
+    
     
     
 }

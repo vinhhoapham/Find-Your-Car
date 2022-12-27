@@ -12,14 +12,19 @@ import Combine
 
 struct MainView: View {
     @State var showingRemindToPickUpSheet = false
-    
     var body: some View {
         
-        MapView(showingRemindToPickUpSheet: $showingRemindToPickUpSheet)
-            .sheet(isPresented: $showingRemindToPickUpSheet) {
-               ScheduleReminderSheetView(isShowing: $showingRemindToPickUpSheet)
-            }
+        ZStack(alignment: .topLeading) {
+            
+            MapView(showingRemindToPickUpSheet: $showingRemindToPickUpSheet)
+                .sheet(isPresented: $showingRemindToPickUpSheet) {
+                   ScheduleReminderSheetView(isShowing: $showingRemindToPickUpSheet)
+                }
         
-        SettingsView()
+            UserControlView()
+
+
+        }.ignoresSafeArea()
+            
     }
 }

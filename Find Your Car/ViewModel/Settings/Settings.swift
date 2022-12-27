@@ -21,11 +21,14 @@ class Settings : ObservableObject , Codable {
         case defaultVehicle
         case colorPalette
         case vehicles
+        case followingUser
     }
     
-    @Published var defaultVehicle : Vehicle = DefaultObject.vehicle
-    @Published var colorPalette : ColorPalette = DefaultSettings.colorPalette
-    @Published private(set) var vehicles       : [Vehicle] = [DefaultObject.vehicle]
+    @Published private(set) var defaultVehicle    : Vehicle = DefaultObject.vehicle
+    @Published var colorPalette                   : ColorPalette = DefaultSettings.colorPalette
+    @Published  var vehicles          : [Vehicle] = [DefaultObject.vehicle]
+    
+    @Published var followingUser : Bool = true
     
     init() {}
     
@@ -35,6 +38,7 @@ class Settings : ObservableObject , Codable {
         try container.encode(defaultVehicle, forKey: .defaultVehicle)
         try container.encode(colorPalette, forKey: .colorPalette)
         try container.encode(vehicles, forKey: .vehicles)
+        try container.encode(followingUser, forKey: .followingUser)
     }
     
     required init(from decoder: Decoder) throws {
@@ -43,6 +47,8 @@ class Settings : ObservableObject , Codable {
         defaultVehicle = try decodedValues.decode(Vehicle.self, forKey: .defaultVehicle)
         colorPalette   = try decodedValues.decode(ColorPalette.self, forKey: .colorPalette)
         vehicles       = try decodedValues.decode([Vehicle].self, forKey: .vehicles)
+        
+        followingUser = try decodedValues.decode(Bool.self, forKey: .followingUser)
         
     }
     
@@ -60,6 +66,7 @@ class Settings : ObservableObject , Codable {
     func add(vehicle: Vehicle){
         vehicles.append(vehicle)
     }
+    
     
     
     

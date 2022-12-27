@@ -12,9 +12,13 @@ enum MapDefaults {
     static let longitudeSpan     = 0.0005
     static let lattitudeSpan     = 0.0005
     static let paddingSpan       = 0.00015
-    static let span              = MKCoordinateSpan(latitudeDelta: MapDefaults.longitudeSpan,
-                                                    longitudeDelta: MapDefaults.lattitudeSpan)
-    static let displayingRegion = MKCoordinateRegion(center: LocationDefault.defaultLocation.coordinate,
-                                                        span: MapDefaults.span)
+    static let span              = MKCoordinateSpan(
+                                    latitudeDelta: MapDefaults.longitudeSpan,
+                                    longitudeDelta: MapDefaults.lattitudeSpan
+                                    )
+    static let displayingRegion = MKCoordinateRegion(
+        center: LocationDefault.defaultLocation.coordinate,
+        span: MapDefaults.span
+    )
 }
 
